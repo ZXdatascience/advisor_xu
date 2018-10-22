@@ -11,12 +11,12 @@ from suggestion.algorithm.bayesian_optimization import BayesianOptimization
 from suggestion.algorithm.tpe import TpeAlgorithm
 from suggestion.algorithm.simulate_anneal import SimulateAnnealAlgorithm
 from suggestion.algorithm.hyperopt_random_search import HyperoptRandomSearchAlgorithm
-from suggestion.algorithm.quasi_random_search import QuasiRandomSearchAlgorithm
-from suggestion.algorithm.chocolate_random_search import ChocolateRandomSearchAlgorithm
-from suggestion.algorithm.chocolate_grid_search import ChocolateGridSearchAlgorithm
-from suggestion.algorithm.chocolate_bayes import ChocolateBayesAlgorithm
-from suggestion.algorithm.cmaes import CmaesAlgorithm
-from suggestion.algorithm.mocmaes import MocmaesAlgorithm
+# from suggestion.algorithm.quasi_random_search import QuasiRandomSearchAlgorithm
+# from suggestion.algorithm.chocolate_random_search import ChocolateRandomSearchAlgorithm
+# from suggestion.algorithm.chocolate_grid_search import ChocolateGridSearchAlgorithm
+# from suggestion.algorithm.chocolate_bayes import ChocolateBayesAlgorithm
+# from suggestion.algorithm.cmaes import CmaesAlgorithm
+# from suggestion.algorithm.mocmaes import MocmaesAlgorithm
 from suggestion.algorithm.skopt_bayesian_optimization import SkoptBayesianOptimization
 
 
@@ -71,18 +71,18 @@ class AdvisorClient(object):
       algorithm = HyperoptRandomSearchAlgorithm
     elif study.algorithm == "SimulateAnneal":
       algorithm = SimulateAnnealAlgorithm()
-    elif study.algorithm == "QuasiRandomSearch":
-      algorithm = QuasiRandomSearchAlgorithm()
-    elif study.algorithm == "ChocolateRandomSearch":
-      algorithm = ChocolateRandomSearchAlgorithm()
-    elif study.algorithm == "ChocolateGridSearch":
-      algorithm = ChocolateGridSearchAlgorithm()
-    elif study.algorithm == "ChocolateBayes":
-      algorithm = ChocolateBayesAlgorithm()
-    elif study.algorithm == "CMAES":
-      algorithm = CmaesAlgorithm()
-    elif study.algorithm == "MOCMAES":
-      algorithm = MocmaesAlgorithm()
+    # elif study.algorithm == "QuasiRandomSearch":
+    #   algorithm = QuasiRandomSearchAlgorithm()
+    # elif study.algorithm == "ChocolateRandomSearch":
+    #   algorithm = ChocolateRandomSearchAlgorithm()
+    # elif study.algorithm == "ChocolateGridSearch":
+    #   algorithm = ChocolateGridSearchAlgorithm()
+    # elif study.algorithm == "ChocolateBayes":
+    #   algorithm = ChocolateBayesAlgorithm()
+    # elif study.algorithm == "CMAES":
+    #   algorithm = CmaesAlgorithm()
+    # elif study.algorithm == "MOCMAES":
+    #   algorithm = MocmaesAlgorithm()
     elif study.algorithm == "SkoptBayesianOptimization":
       algorithm = SkoptBayesianOptimization()
     else:

@@ -199,7 +199,6 @@ class BaseHyperoptAlgorithm(AbstractSuggestionAlgorithm):
         parameter_values_json[param["parameterName"]] = suggest_value
 
       new_advisor_trial.parameter_values = json.dumps(parameter_values_json)
-      new_advisor_trial.save()
       return_trial_list.append(new_advisor_trial)
 
     return return_trial_list

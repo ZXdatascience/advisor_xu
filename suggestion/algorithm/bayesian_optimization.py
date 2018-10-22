@@ -231,7 +231,6 @@ class BayesianOptimization(AbstractSuggestionAlgorithm):
 
     return_trial = Trial.create(study.name, "BayesianOptimizationTrial")
     return_trial.parameter_values = json.dumps(suggested_parameter_values_json)
-    return_trial.save()
 
     return [return_trial]
 

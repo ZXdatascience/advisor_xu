@@ -51,7 +51,6 @@ class RandomSearchAlgorithm(AbstractSuggestionAlgorithm):
         parameter_values_json[param["parameterName"]] = suggest_value
 
       trial.parameter_values = json.dumps(parameter_values_json)
-      trial.save()
       return_trial_list.append(trial)
 
     return return_trial_list

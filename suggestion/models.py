@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+import json
 
 
 class Objects():
@@ -85,7 +86,7 @@ class Study():
              status="Pending"):
     study = cls()
     study.name = name
-    study.study_configuration = study_configuration
+    study.study_configuration = json.dumps(study_configuration)
     study.algorithm = algorithm
     study.status = status
     study.id = Study.study_id
